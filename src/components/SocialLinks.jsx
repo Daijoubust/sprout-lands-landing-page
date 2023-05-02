@@ -33,7 +33,7 @@ const SocialLinks = () => {
                 Mail <HiOutlineMail size={30}/>
                 </>
             ),
-            href: 'mailto:test@gamil.com',
+            href: 'mailto:#',
         },
         {
             id:4,
@@ -42,23 +42,21 @@ const SocialLinks = () => {
                 Donate <MdOutlineAttachMoney size={30}/>
                 </>
             ),
-            href: '/src/assets/resume.pdf',
+            href: '#',
             style : 'rounded-bl-md',
-            download: true,
         },
         
     ]
     return (
         
-        <div className='hidden lg:flex flex-col top-[35%] right-0 fixed'>
+        <div className='hidden lg:flex flex-col top-[30%] right-0 fixed'>
             <ul>
 
                 {links.map(({id, child,href,style,download}) => (
-                    <li key={id} className={'flex justify-between items-center w-40 h-14 px-4 mr-[-30px] hover:ml-[-10px] bg-navText hover:rounded-md duration-300' + ' ' + style}>
+                    <li key={id} className={'flex justify-between items-center w-40 h-16 px-4 mr-[-30px] hover:ml-[-10px] bg-navText hover:rounded-md duration-300' + ' ' + style}>
                     <a 
                     href={href}
                     className='flex justify-between items-center w-full text-white font-signature'
-                    download={download}
                     target='_blank'
                     rel='noreferrer'
                     >

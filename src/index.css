@@ -11,6 +11,13 @@
   font-family: 'Poppins' , sans-serif;
 }
 
+@media (max-width: 640px) {
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* 
 body {
   backgroundImage: `url({bgSpecial})`,
@@ -21,7 +28,13 @@ body {
 
 body {
   background-image: url(./assets/bgSpecial.gif);
-  background-size: cover;
+  background-size:contain;
   background-position: center;
-  min-height: 100vh;
+  min-width: 320px;
+}
+
+@media only screen and (min-width: 324px) {
+  button {
+    display: none;
+  }
 }
